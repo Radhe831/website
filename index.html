@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Radhe Tech Services</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero" id="home">
+    <nav class="nav container">
+      <div class="brand">
+        <span class="brand-mark">R</span>
+        <span>Radhe Tech Services</span>
+      </div>
+      <button class="menu-btn" aria-label="Toggle navigation" id="menuBtn">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero-content container">
+      <p class="eyebrow">Your trusted digital partner</p>
+      <h1>Build, Scale & Secure Your Business with Smart IT Solutions</h1>
+      <p>
+        We provide web development, cloud setup, and managed technical support to help startups
+        and businesses grow faster.
+      </p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="#contact">Get Free Consultation</a>
+        <a class="btn btn-outline" href="#services">Explore Services</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section container" id="services">
+      <div class="section-heading">
+        <p class="eyebrow">What we do</p>
+        <h2>Services Designed for Modern Businesses</h2>
+      </div>
+      <div class="grid cards">
+        <article class="card">
+          <h3>Website Development</h3>
+          <p>Fast, responsive, and SEO-friendly websites customized for your brand and goals.</p>
+        </article>
+        <article class="card">
+          <h3>App & Dashboard Solutions</h3>
+          <p>Admin dashboards and custom web apps that simplify your daily operations.</p>
+        </article>
+        <article class="card">
+          <h3>Cloud & Hosting Setup</h3>
+          <p>Secure deployment, domain setup, backups, and maintenance for uninterrupted uptime.</p>
+        </article>
+        <article class="card">
+          <h3>Technical Support</h3>
+          <p>Reliable support plans, troubleshooting, and optimization to keep systems healthy.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="about">
+      <div class="container split">
+        <div>
+          <p class="eyebrow">About us</p>
+          <h2>Why Choose Radhe Tech Services?</h2>
+          <p>
+            We blend creativity with engineering to deliver practical digital products. Our team focuses
+            on transparent communication, timely delivery, and long-term client success.
+          </p>
+          <ul class="check-list">
+            <li>Client-first approach with clear milestones</li>
+            <li>High-quality code and modern design standards</li>
+            <li>Affordable packages for startups and small businesses</li>
+          </ul>
+        </div>
+        <div class="stats">
+          <div>
+            <strong>120+</strong>
+            <span>Projects Delivered</span>
+          </div>
+          <div>
+            <strong>98%</strong>
+            <span>Customer Satisfaction</span>
+          </div>
+          <div>
+            <strong>24/7</strong>
+            <span>Support Availability</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="contact">
+      <div class="section-heading">
+        <p class="eyebrow">Contact us</p>
+        <h2>Let’s Build Something Great Together</h2>
+      </div>
+      <form class="contact-form" onsubmit="event.preventDefault(); alert('Thanks! We will contact you soon.');">
+        <div class="grid form-grid">
+          <label>
+            Full Name
+            <input type="text" required placeholder="Enter your name" />
+          </label>
+          <label>
+            Email Address
+            <input type="email" required placeholder="Enter your email" />
+          </label>
+        </div>
+        <label>
+          Project Details
+          <textarea rows="5" required placeholder="Tell us about your project"></textarea>
+        </label>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© <span id="year"></span> Radhe Tech Services. All rights reserved.</p>
+      <a href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
